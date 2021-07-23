@@ -1,6 +1,20 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+h1 {
+    font-weight: bold;
+}
+
 .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
+}
+
+.container {
+    margin-bottom: 50px;
 }
 
 .navbar {
@@ -26,11 +40,11 @@ textarea {
 }
 
 .footer-padding {
-    padding-bottom: 60px;
+    padding-bottom: 100px;
 }
 
 .footer {
-    position: absolute;
+    position: fixed;
     text-align: center;
     bottom: 0;
     width: 100%;

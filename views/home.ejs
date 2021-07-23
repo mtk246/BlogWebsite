@@ -2,8 +2,12 @@
 
 <h1>Home</h1>
 <p><%= contentTitle %></p>
+<% postContent.forEach(function(post){ %>
+<h1><%= post.title %></h1>
+<p><%= post.body.substring(0,100) + "..." %></p>
+<a href="/posts/<%=post.title%>" class="btn btn-primary">Read more</a>
+<% }); %>
 
-<% console.log(postContent); %> <%
-postContent.forEach(function(post){console.log(post.title)}); %> <%
-postContent.forEach(function(post){console.log(post.body)}); %> <%-
-include("partials/footer"); -%>
+<!-- Footer -->
+
+<%- include("partials/footer"); -%>
