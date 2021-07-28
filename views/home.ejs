@@ -4,8 +4,8 @@
 <p><%= contentTitle %></p>
 <% postContent.forEach(function(post){ %>
 <h1><%= post.title %></h1>
-<p><%= post.body.substring(0,100) + "..." %></p>
-<a href="/posts/<%=post.title%>" class="btn btn-primary">Read more</a>
+<p><%= post.content.substring(0,100) + "..." %></p>
+<a href="/posts/<%=post._id%>" class="btn btn-primary">Read more</a>
 <% }); %>
 
 <!-- Footer -->
